@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreedeep M's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f4f4f4;
+            color: #333;
+        }
 
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 15px;
+            width: 100%;
+            max-width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        button {
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 10px;
+            }
+            .project-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Shreedeep M's Portfolio</h1>
+        <p>Web Developer | Passionate about Creating Awesome Websites</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hi, I'm Shreedeep M! I'm a web developer passionate about building dynamic, responsive websites and learning new technologies.</p>
+        <img src="profile.jpg" alt="Shreedeep M's profile picture" style="width:200px; border-radius:50%;">
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A cool website for showcasing products.</p>
+                <button onclick="showProjectDetails('Project 1')">View</button>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Personal blog with dynamic content.</p>
+                <button onclick="showProjectDetails('Project 2')">View</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Let's connect! Email me at: Shreedeep M@example.com</p>
+    </section>
+
+    <script>
+        console.log("Welcome to Shreedeep M's Portfolio!");
+
+        function showProjectDetails(projectName) {
+            alert(`${projectName} details coming soon!`);
+        }
+    </script>
+</body>
+</html>
